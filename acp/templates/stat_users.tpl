@@ -1,6 +1,9 @@
   <tr style="background-color:$background">    
    <td>$i</td>
-   <td>$row[ip]</td>  
+   <td>      <form  class="sp" method="post" action="$file">      
+    <input type="hidden" name="log" style="" value="$row[ip]"">      
+    <input class="sp" type="submit" value="$row[ip]">  
+  </form></td> 
    <td>$besuch</td>  
    <td>$row[cc]</td>  
    <td>$row[browser]</td>  

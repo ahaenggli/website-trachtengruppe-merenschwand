@@ -1,16 +1,16 @@
 <center><h1>Vorstand</h1><center><br><br>
-<img src="./images/vorstand/vorstand.jpg">
+<img src="./images/vorstand/vorstand_2013.jpg">
 <br>
     <br>
     <table border="0" cellspacing="10">
       <tr><td>
-          <img src="./images/vorstand/margritmt.jpg" ></td><td></td><td>Margrit Heim-Fischer
+          <img src="./images/vorstand/margritmt.jpg" ></td><td></td><td><b>Pr&auml;sidentin</b><br>Margrit Heim-Fischer
           <br>Schorenstrasse 46
-          <br>5642 Mühlau
+          <br>5642 M&uuml;hlau
           <br>Tel: 056 668 12 76
           <br>
           <br></td><td>
-          <img src="./images/vorstand/erica.jpg" ></td><td></td><td>Erica Fischer-Gürber 
+          <img src="./images/vorstand/erica.jpg" ></td><td></td><td><b>Vice-Pr&auml;sidentin</b><br>Erica Fischer-G&uuml;rber 
           <br>Herdmattenstr. 30
           <br>5636 Benzenschwil
           <br>Tel: 056 668 12 85 
@@ -19,17 +19,17 @@
       </tr>
       <tr>
         <td >
-          <img src="./images/vorstand/astrid.jpg" ></td><td></td><td>Astrid Wiederkehr
-          <br>Waldhof
-          <br>8916 Jonen
-          <br>056 634 29 08
+          <img src="./images/vorstand/michaela.jpg" ></td><td></td><td><b>Varia</b><br>Michaela Kathriner
+          <br>Reitibuechstrasse 12 
+          <br>5636 Benzenschwil
+          <br>Tel: 056 664 53 13
           <br>
           <br></td>
           
-                  <td><img src="./images/vorstand/regula.jpg" ></td><td></td><td>Regula Schuler 
-          <br>Im Zil 28
-          <br>8620 Wetzikon
-          <br>043 497 71 29
+                  <td><img src="./images/vorstand/claudia.jpg" ></td><td></td><td><b>Kassiererin</b><br>Claudia Leuthard 
+          <br>Hagnau 8
+          <br>5634 Merenschwand
+          <br>Tel: 056 664 57 42
           <br>
           <br>
           <br></td>
@@ -38,24 +38,26 @@
       <table align="center">
       <tr>
       
-       <td><img src="./images/vorstand/monika.jpg" ></td>
-       <td></td><td>Monika Br&uuml;gger
-          <br>Daten folgen...</td>
+       <td><img src="./images/vorstand/adriano.jpg" ></td>
+       <td></td><td><b>Aktuar &amp; Webmaster</b><br>Adriano H&auml;nggli
+          <br>Oberdorfstrasse 8
+          <br>5628 Birri
+          <br> Tel: 056 664 47 93</td>
  
           
       </tr>
     </table>
     <hr>
-    <center><h1>Leiterinnen:</h1>
+ <center><h1>Leiterinnen:</h1>
       <center>
-        <br><b>Pr&auml;sidentin</b>
+        <br><b>Pr&auml;sidentin &amp; Kindertanzleiterin</b>
         <br>
         <br>
         <table border="0">
           <tr><td>
               <img src="./images/vorstand/margrit.jpg" ></td><td></td><td>Margrit Heim-Fischer
               <br>Schorenstrasse 46
-              <br>5642 Mühlau
+              <br>5642 M&uuml;hlau
               <br>Tel: 056 668 12 76
               <br>
               <br></td>
@@ -68,32 +70,14 @@
           </tr>
           <tr>
             <td align="center" >
-              <img src="./images/vorstand/erika_r.jpg"></td><td>Erika Riedo
-              <br>Hägglingerstr. 12
-              <br>5522 Tägerig
-              <br>Tel: 056 491 48 36</td><td>
-              <img src="./images/vorstand/erica.jpg" ></td><td>Erica Fischer-Gürber 
-              <br>Herdmattenstrasse 30
-              <br>5636 Benzenschwil
-              <br>Tel: 056 668 12 85 
-              <br>
-              <br></td>
-          </tr>
-        </table>
-        <br>
-        <br>
-        <table>
-          <tr><td></td><td></td><td><b>Kindertanzleiterin</b></td><td></td><td></td><td><b>Kindertanzleiterin</b></td>
-          </tr>
-          <tr><td>
-              <img src="./images/vorstand/karin.jpg" ></td><td></td><td>Karin Vogel-Müller
-              <br>Kochsmattstrasse 2
-              <br>5445 Eggenwil
-              <br>Tel: 056 631 47 25</td><td>
-              <img src="./images/vorstand/margrit.jpg" ></td><td></td><td>Margrit Heim-Fischer
-              <br>Schorenstrasse 46
-              <br>5642 Mühlau
-              <br>Tel: 056 668 12 76
+              </td><td>Beatrice Helm
+              <br>Usserdorfstr. 8
+              <br>8104 Weinigen
+              <br></td><td>
+              <img src="./images/vorstand/eveline.jpg" ></td><td>Eveline Waldvogel 
+              <br>Siebeneichenstr. 17 
+              <br>5634 Merenschwand
+              <br>Tel: 056 664 13 78 
               <br>
               <br></td>
           </tr>

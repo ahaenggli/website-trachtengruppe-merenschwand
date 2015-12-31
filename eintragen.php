@@ -4,7 +4,7 @@ $Zahl_1 = intval(rand(1, 5));
 $Zahl_2 = intval(rand(1, 5));
 $error = "";
 $vorschau = "";
-$zahl = md5(($Zahl_1 + $Zahl_2));
+$zahl = md5(md5(md5(md5($Zahl_1 + $Zahl_2))));
 $datum = date("d.m.Y - H:i", time());
 if(isset($_POST['vorschau'])){
 $website = (isset($_POST['website']) AND !empty($_POST['website']))? '<a href="'.addslashes(strip_tags($_POST['website'])).'">[Homepage]</a>':"";
@@ -25,7 +25,7 @@ $name  = (isset($_POST['name']) AND !empty($_POST['name']))? sicherung($_POST['n
 if(isset($_POST['submit']))
 {
 $true=true;
-if($_POST['number'] != md5($_POST['arithmetic']))
+if($_POST['number'] != md5(md5(md5(md5(($_POST['arithmetic']))))))
 { 
 $error .="<h1>Rechenaufgabe falsch gelöst!</h1>";
 $true=false;

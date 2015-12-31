@@ -34,16 +34,14 @@ $name          = nl2br(stripslashes(htmlspecialchars($_POST['name'])));
 $IP            = getenv("REMOTE_ADDR");
 $absender      = preg_replace( "/[^a-z0-9 !?:;,.\/_\-=+@#$&\*\(\)]/im", "", $_POST['emaila'] );
 $absender      = preg_replace( "/(content-type:|bcc:|cc:|to:|from:)/im", "", $absender );
-$nachricht     = nl2br(stripslashes(htmlspecialchars($_POST['message'])));
-$mailnachricht = "Hallo!\n<br>
-Name: $name\n<br>
-IP: $IP\n<br>
-E-Mail: $absender\n<br>
-Nachricht:<br>$nachricht\n<br>";
+$nachricht     = $_POST['message'];
+$mailnachricht = "Name: $name\n
+IP: $IP\n
+E-Mail: $absender\n
+Nachricht:\n$nachricht\n";
 $from = "From: $name <$absender>\n";
 $from.= "Reply-To: $absender\n";
-$from.= "Content-Type: text/html\nContent-Transfer-Encoding: 8bit\n";
-$mail = mail('*****', 'Website der Trachtengruppe Merenschwand', ''.$mailnachricht.'', $from);
+$mail = mail('****', 'Website der Trachtengruppe Merenschwand', $mailnachricht, $from);
 $_SESSION['spam']='Yes';
 $_SESSION['dauer']=time()+500;
 if($mail ==TRUE)

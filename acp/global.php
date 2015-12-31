@@ -9,4 +9,6 @@ $style = '../css/style.css';
 $page = (!isset($_GET['p']) OR $_GET['p']=='index')? "anfang": $_GET['p'];
 $inhalt = "";
 $menu = "";
+
+  
 ?>

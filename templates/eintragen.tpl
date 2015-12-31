@@ -11,7 +11,7 @@ $vorschau
         <div align="right"> Name:
         </div></td>
       <td width="66%">
-        <input name="name" type="text"value="$name"></td>
+        <input name="name" type="text" value="$name"></td>
     </tr>
     <tr>
       <td valign="top">
@@ -46,6 +46,7 @@ $vorschau
         <a href="javascript:SmilieEinfuegen(':winki:')">
           <img border="0" src="./images/smilies/winki.gif" alt="Smilie"></a></td>
     </tr>
+    <tr>
     <td valign="top">
       <div align="right">
         <p> Eintrag:
@@ -62,12 +63,11 @@ $vorschau
       <td valign="top">       
        <div align="right">
        <p> Spamschutz:</p>
-                <p> &nbsp;
-        </p>
+                <p> &nbsp;</p>
         </div></td>
 
-      <td valign="top">
-                Wieviel ist $Zahl_1 plus $Zahl_2 ?<input name="number" type="hidden" value="$zahl">
+      <td>
+                Wieviel ist <span style="display:none">1 plus </span><span>$Zahl_1</span> + <span>$Zahl_2</span><span style="display:none">+ 5</span> ?<input name="number" type="hidden" value="$zahl">
         <input name="arithmetic" type="text" id="arithmetic" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" onfocus="if(this.value=='Das Ergebnis bitte hier hinein...')this.value=''" onblur="if(this.value=='')this.value='Das Ergebnis bitte hier hinein...'" value="Das Ergebnis bitte hier hinein...">
 
            <br><br>
@@ -75,8 +75,8 @@ $vorschau
             <input type="reset" value="Zurücksetzen">
             <input type="submit" name="vorschau" value="Vorschau"><br></td>
 </tr>
-</form>
 </table>
+</form>
 
 <div align="center">
 Mit folgenden Elementen k&ouml;nnen Sie den Eintrag etwas gestalten:<br>

@@ -1,11 +1,11 @@
    <br>
 <center>  
-  <form class="sp" method="post" action="$file">      
+<!--  <form class="sp" method="post" action="$file">      
     <input class="sp" type="submit" value="Start">  
-  </form>  
+  </form> --> 
   <form  class="sp"method="post" action="$file">      
     <input type="hidden" name="ipl" style="" value="$ip">      
-    <input class="sp" type="submit" value="Eigene Daten l&ouml;schen">  
+    <input class="sp" type="submit" value="Mich selber aus der Statistik l&ouml;schen">  
   </form>
       <form  class="sp" method="post" action="$file">      
     <input type="hidden" name="log" style="" value="$logs">      
@@ -14,11 +14,10 @@
   
 </center> 
 <br>
-<table>
-  <tr>
+<table style="color:black;">
+  <tr style="color:lightgreen;">
   <td>Nr.</td>
   <td>IP</td>
-  <td>Host</td>
   <td>Letzter Besuch</td>
   <td>Land</td>
   <td>Browser</td>

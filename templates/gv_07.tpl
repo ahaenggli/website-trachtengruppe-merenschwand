@@ -1,0 +1,16 @@
+<b>GV 2007 der Trachtengruppe Merenschwand</b>
+
+<h1>Vereinsjahr mit vielen Höhepunkten ist Vergangenheit</h1>
+
+In den letzten Tagen konnte das Kinder- und Jugendheim St. Benedikt in Hermetschwil 1300 Franken entgegennehmen. Der schöne Betrag setzt sich zusammen aus dem Reinerlös vom Adventswarenverkauf und vom Lotto anlässlich des Klaushockes der Trachtenleute. Der Heimleiter Herr Peter Bringold dankt allen herzlich, die zu diesem grossen Betrag in irgendeiner Form beigesteuert haben. Das Geld wird für das Skilager eingesetzt.
+<br><br>
+Zu Beginn der 77. Generalversammlung gedachten die 35 anwesenden Mitglieder dem letzten Gründungsmitglied Marie Wey, Hagnau. Anschliessend liess die Präsidentin Margrit Heim-Fischer im Restaurant Huwyler ein intensives und abwechslungsreiches Vereinsjahr 2006 Revue passieren. Ein Höhepunkt war sicher das Tanzen mit anderen Gruppen aus der Nordwestschweiz im Ballenberg. Bei grosser Hitze zeigten wir zusammen mit der Gruppe Trachtetanzlüt Muri auf vier staubigen Plätzen unsere Volkstänze. An Fronleichnam erfreuten wir die Insassen vom Reusspark Gnadenthal mit Singen und Tanzen und eine Woche später begleiteten wir die neugewählte Bundesrätin Doris Leuthard beim Dorfeinzug. Unvergesslich auch die Trachtenreise und das dreitägige Unspunnenfest mit Umzug in Interlaken. Alle drei Jahre steht in Fiesch auch die Brauchtumswoche an, wo nebst einer Belegung eines Handwerkskurses, auch musiziert und nach Herzenslust getanzt und gesungen werden kann. Diese sehr beliebte Ferienwoche besuchten einige Mitglieder schon zum fünften Mal. Zwei Mitglieder standen wir im letzten Sommer zur Hochzeit Spalier, nämlich für Regula Käppeli mit Ernst Schuler und auch für  Eveline Fischer mit Sepp Waldvogel.
+<br>Beim Traktandum Mutationen durften wir mit Freude Claudia Leuthard-Henggeler in den Verein aufnehmen. Der Vorstand wurde wieder bestätigt und setzt sich wie bisher zusammen: Margrit Heim, Präsidentin; Erica Fischer Vize und Tanzleiterin; Monika Brügger Kassierin; Regula Schuler-Käppeli Protokoll und Astrid Wiederkehr.
+Einen Spezialapplaus und Dank gab es für die langjährigen Aktivmitglieder: Marta Vollenweider und Josy Risi für 45 Jahre sowie Bethli Fischer für 35 Jahre. 20 Jahre in der Trachtengruppe sind Elisabeth Ineichen und Margrit Wey. Alle Rekorde schlägt aber mit 67 Jahre Aktiv-Mitgliedschaft Marie Burkart, die noch immer in den Chorproben anzutreffen ist.
+
+<br>
+<h3>Programm 2007</h3>
+Der Chor übte im vergangenen Jahr regelmässig mit dem Männerchor unter der Leitung von Erika Riedo. Diesen Frühling steht ein ehrgeiziges Projekt an. Man will zusammen mit den  Chören aus Bergdietikon und Spreitenbach, die auch von Frau Riedo geleitet werden, in der jeweiligen Ortschaft ein Konzert geben. In Merenschwand findet dies am 6. Mai in der Kirche statt. 
+<br>Frauen und Männer jeden Alters sind bei uns montags zum Singen und Tanzen immer herzlich willkommen. In diesem Jahr steht im Spätherbst wieder ein grosses Volkstheater an, wo „Kulturinteressierte“ in verschiedenen Funktionen gerne mitmachen können. Auskunft gibt die Präsidentin Margrit Heim, Telefon 056-668 12 76.                                           
+
+<br><br><div align="right">hsch</div>

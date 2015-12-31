@@ -1,6 +1,24 @@
 <table border="0" cellpadding="0" cellspacing="10">
   <col width="99">
   <col width="103">
+  
+  <tr><td><b>Nov. 2013 </b></td><td></td><td><b>Bianca und die Brandstifter</b></td>
+  </tr>
+  <tr><td>Regie: 
+      <br> Hanni Schriber</td><td></td><td>(nach dem St&uuml;ck: Janko und de Brandstifter) Volkst&uuml;ck in 4 Akten von Josef Brun    Bearbeitet von Hanni Schriber-Neiger     mit Gesang und Tanz integriert</td>
+  </tr>
+  <tr><td></td><td></td><td></td>
+  
+  
+  <tr><td><b>Nov. 2009 </b></td><td></td><td><b>S'alti F&ouml;rsterhuus</b></td>
+  </tr>
+  <tr><td>Regie: 
+      <br> Hanni Schriber</td><td></td><td>Volkst&uuml;ck in 3 Akten von Josef Brun mit Gesang    Bearbeitet von Hanni Schriber-Neiger     mit Gesang (zus. mit M&auml;nnerchor), Tanz und Musik (Tanzmusik mit T&uuml;rmli Buebe) integriert</td>
+  </tr>
+  <tr><td></td><td></td><td></td>
+  </tr>
+
+
   <tr><td><b>Nov. 2007 </b></td><td></td><td><b>Uf de Sunnr&uuml;ti </b></td>
   </tr>
   <tr><td>Regie: 

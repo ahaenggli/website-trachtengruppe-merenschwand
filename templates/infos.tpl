@@ -5,7 +5,7 @@
 Unsere Aktivit&auml;ten sind:<br><br>
 <br>
 <div><b>Chorsingen</b></div><br>
-Die Singgruppe probt in der Regel jeden Montag gemeinsam mit dem M&auml;nnerchor Merenschwand in der Aula E des Schulhauses.<br> Unter kundiger Leitung werden Volkslieder aus verschiedenen Kulturen einge&uuml;bt. Die Geselligkeit und Kameradschaft ist wichtiger Bestandteil unserer Singgruppe.
+Die Singgruppe probt in der Regel am Mittwoch in der Aula E des Schulhauses.<br> Unter kundiger Leitung werden Volkslieder aus verschiedenen Kulturen einge&uuml;bt. Die Geselligkeit und Kameradschaft ist wichtiger Bestandteil unserer Singgruppe.
 <br><br><br>
 
 <div><b>Volkstanz</b></div>
@@ -16,7 +16,7 @@ Tanzproben sind jeden Montagabend im Untergeschoss der Mehrzweckhalle.
 
 <div><b>Kindertanzen</b></div>
 <br>
-Jeden zweiten Montag treffen sich M&auml;dchen und Burschen ab 5 Jahren im Untergeschoss der Mehrzweckhalle, um unter geduldiger Anleitung Volkst&auml;nze einzu&uuml;ben. Auftritte am Heimetobig, in Altersheimen, an Kindertanztreffen oder sonstigen Anl&auml;ssen f&uuml;llen das Jahresprogramm.
+Donnerstags treffen sich M&auml;dchen und Burschen ab 5 Jahren im Untergeschoss der Mehrzweckhalle, um unter geduldiger Anleitung Volkst&auml;nze einzu&uuml;ben. Auftritte am Heimetobig, in Altersheimen, an Kindertanztreffen oder sonstigen Anl&auml;ssen f&uuml;llen das Jahresprogramm.
 <br><br><br>
 
 <div><b>Heimatabend</b></div>

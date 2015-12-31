@@ -4,7 +4,6 @@
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 <meta http-equiv="pragma" content="cache">
 <meta http-equiv="content-language" content="de">
-<meta http-equiv="reply-to" content="adriano_haenggli@hotmail.com">
 <meta http-equiv="Content-Style-Type" content="text/css" >
 <meta name="robots" content="INDEX,FOLLOW">
 <meta name="description" content="Die Trachtengruppe Merenschwand hat nun eine eigene Website.">
@@ -29,21 +28,22 @@ document.Formular.inhalt.value += Smilie+" ";
 document.Formular.inhalt.focus();
 }//-->
 </script>
-
+   
 </head>
 <body>        <br>
 <div id="bg">
- <div id="title">
+ <div id="title" style="background-image:none;"><h1 style="display:inline;color:white;font-size:60px;"><center>Admin-Bereich</center></h1>
  </div>
 <br>
- <div id="left">
+
 
 $menu
 
-</div>
-<div id="content"><br><br>
 
+<div id="content" style="padding: 0px 15px;"><br><br>
+<center>
 $inhalt
+</center>
 </div>
 <br style="clear:both;" ><br>
 </div>

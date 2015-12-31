@@ -1,6 +1,5 @@
 <h3>Festschrift: 75 Jahre Trachtengruppe Merenschwand</h3> 
-<br>  <h1>Gruss und Willkomm</h1> 
-<br>
+<h1>Gruss und Willkomm</h1> 
 <br>Mit Stolz feiern wir, die Trachtengruppe Merenschwand, dieses Jahr das 75-j&auml;hrige Bestehen. 1930 beschlossen zw&ouml;lf Frauen die 100-Jahr-Feier des Frei&auml;mtersturms zum Anlass zu nehmen, eine Frei&auml;mter Sonntagstracht zu n&auml;hen. Dies war der Grundstein unseres Vereines, der haupts&auml;chlich das Volkslied und den Volkstanz pflegt. Seit mehr als dreissig Jahren wird alle zwei Jahre zum Heimatabend mit Gesang und Tanz und mit Volkstheater eingeladen. Grosse Theaterst&uuml;cke mit Freud und Leid haben bei uns Tradition und werden mit viel Begeisterung gespielt.Wir Trachtenleute sind offen f&uuml;r Neues und wollen aber auch traditionelles Brauchtum weiterhin pflegen. 
 <br> 
 <br>Wir kennen auch die Jugendf&ouml;rderung und pflegen seit mehr als f&uuml;nfzehn Jahren eine st&auml;ndige Kindertanzgruppe. Mit einfachen Volkst&auml;nzen soll bei den Kindern die Freude am Tanzen geweckt werden. 

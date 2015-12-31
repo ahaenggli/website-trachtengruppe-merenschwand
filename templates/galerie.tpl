@@ -1,6 +1,13 @@
-<h1>$beschreibung</h1>
+<center><h1>$beschreibung</h1>
+  
+$galerie_beschrieb
 <br>
-Mit einem Klick auf ein Bild sehen Sie es in voller Gr&ouml;sse.<br><br>
-<table align="center">
+Mit einem Klick auf ein Bild sehen Sie es in voller Gr&ouml;sse.<br>
+$slideshow
+  
+
 $images
-</table>
+ </center>
+<br>
+
+<br><br>

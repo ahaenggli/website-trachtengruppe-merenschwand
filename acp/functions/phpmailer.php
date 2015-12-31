@@ -72,7 +72,7 @@ class PHPMailer {
    * Sets the From email address for the message.
    * @var string
    */
-  var $From              = '*****';
+  var $From              = '****';
 
   /**
    * Sets the From name of the message.

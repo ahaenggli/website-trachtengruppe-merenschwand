@@ -1,2 +1,42 @@
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|php|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=900000, public"
+</FilesMatch>
+
+AddType text/x-component htc
 RewriteEngine on 
+
+RewriteEngine on
+    rewritecond %{http_host} ^trachtengruppe-merenschwand.ch [nc]
+    rewriterule ^(.*)$ http://www.trachtengruppe-merenschwand.ch/$1 [r=301,nc]
+
+RewriteCond %{HTTP_USER_AGENT} TrachtenApp
+RewriteRule ^(.*)$ http://testy.trachtengruppe-merenschwand.ch/neu/$1 [NC,L]                                                  
+
 RewriteRule ^([a-z-A-Z_0-9]+).html$ index.php?p=$1
+#RewriteRule ^img_([-_0-9]+).shtml$ index.php?p=galerie&imgid=$1
+#RewriteRule ^img_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=iweb&gal=$1&img=$2
+#RewriteRule ^img_([-_0-9]+)_([-_0-9]+).shtml$ index.php?p=iweb&gal=$1&img=$2
+#RewriteRule ^galerie_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=iweb&gal=$1&los=$2
+#RewriteRule ^galerie_(.*).shtml$ index.php?p=galerie&gal=$1
+RewriteRule ^news_(.*).shtml$ index.php?p=news&id=$1
+
+#RewriteRule ^iwebalbumpics_([-_0-9]+).js$ js.php?nr=$1
+
+
+
+RewriteRule ^img_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=iweb&gal=$1&img=$2
+RewriteRule ^galerie_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=iweb&gal=$1&los=$2
+RewriteRule ^galerie_([-_0-9]+).shtml$ index.php?p=fotos&y=$1
+RewriteRule ^fotos-([-_0-9]+).shtml$ index.php?p=fotos&seite=$1
+RewriteRule ^iwebalbumpics_([-_0-9]+).js$ js.php?nr=$1
+RewriteRule ^rss.rss$ rss.php
+
+AddHandler php5-fastcgi .php .php5
+
+<IfModule mod_headers.c>
+ <FilesMatch ".(js|css|xml|gz|html)$">
+     Header append Vary: Accept-Encoding
+  </FilesMatch>
+</ifModule>  
+
+
