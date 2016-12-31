@@ -1,20 +1,22 @@
-<br><h1>Proben 2015 Chorgemeinschaft</h1> 
-<b>Die Singproben beginnen um 19.30 Uhr und finden in der Aula des Schulhauses E statt.</b> 
-<br><br>
+<h1>Proben 2015 Chorgemeinschaft</h1> 
+<h3 class="design design-info">Die Singproben beginnen um 19.30 Uhr und finden in der Aula des Schulhauses E statt.</h3> 
 
-<center><img src="./images/galerie/2014/01/bilder/0003.jpg"></center><br>
+<center><img src="./images/galerie/2014/01/bilder/0003.jpg" alt="Chor"></center><br>
 
 [Probeplan:Singen,2015]
-"2"=>"25", 
-"3"=>"11,25", 
-"4"=>"22", 
-"5"=>"06,20", 
-"6"=>"03,17", 
-"8"=>"19"
+"8"=>"12,26", 
+"9"=>"02,16,23",
+"10"=>"14,21,28",  
+"11"=>"04,10. Hauptprobe,11,12. Hauptprobe,14. & So 15. Heimatabend, 18.Durchlauf,21. &  So 22. Heimatabend",   
+
 [/Probeplan]
 
 
 <br> 
 <br>
-<center><i><b>Schauen Sie einfach mal bei uns herein (Egal ob Singen oder Tanzen). Wir freuen uns!</b></i>
+
+<center>
+<div class="design design-ok">
+<i><b>Schauen Sie einfach mal bei uns herein (Egal ob Tanzen oder Singen). Wir freuen uns!</b></i>
+</div>
 </center>

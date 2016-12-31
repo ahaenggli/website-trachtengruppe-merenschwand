@@ -1,13 +1,16 @@
-<center><h1>$beschreibung</h1>
-  
+<section class="center"><div class="design design-ok">
+<h1>$beschreibung</h1>
+ 
 $galerie_beschrieb
-<br>
-Mit einem Klick auf ein Bild sehen Sie es in voller Gr&ouml;sse.<br>
+</div>
+
+
+$klick<br>
 $slideshow
   
 
 $images
- </center>
+ </section>
 <br>
 
 <br><br>

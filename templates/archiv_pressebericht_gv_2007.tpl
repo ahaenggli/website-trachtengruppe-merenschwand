@@ -1,0 +1,18 @@
+<article>
+<b>GV 2007 der Trachtengruppe Merenschwand</b>
+
+<h1>Vereinsjahr mit vielen H&ouml;hepunkten ist Vergangenheit</h1>
+
+In den letzten Tagen konnte das Kinder- und Jugendheim St. Benedikt in Hermetschwil 1300 Franken entgegennehmen. Der sch&ouml;ne Betrag setzt sich zusammen aus dem Reinerl&ouml;s vom Adventswarenverkauf und vom Lotto anl&auml;sslich des Klaushockes der Trachtenleute. Der Heimleiter Herr Peter Bringold dankt allen herzlich, die zu diesem grossen Betrag in irgendeiner Form beigesteuert haben. Das Geld wird f&uuml;r das Skilager eingesetzt.
+<br><br>
+Zu Beginn der 77. Generalversammlung gedachten die 35 anwesenden Mitglieder dem letzten Gr&uuml;ndungsmitglied Marie Wey, Hagnau. Anschliessend liess die Pr&auml;sidentin Margrit Heim-Fischer im Restaurant Huwyler ein intensives und abwechslungsreiches Vereinsjahr 2006 Revue passieren. Ein H&ouml;hepunkt war sicher das Tanzen mit anderen Gruppen aus der Nordwestschweiz im Ballenberg. Bei grosser Hitze zeigten wir zusammen mit der Gruppe Trachtetanzl&uuml;t Muri auf vier staubigen Pl&auml;tzen unsere Volkst&auml;nze. An Fronleichnam erfreuten wir die Insassen vom Reusspark Gnadenthal mit Singen und Tanzen und eine Woche sp&auml;ter begleiteten wir die neugew&auml;hlte Bundesr&auml;tin Doris Leuthard beim Dorfeinzug. Unvergesslich auch die Trachtenreise und das dreit&auml;gige Unspunnenfest mit Umzug in Interlaken. Alle drei Jahre steht in Fiesch auch die Brauchtumswoche an, wo nebst einer Belegung eines Handwerkskurses, auch musiziert und nach Herzenslust getanzt und gesungen werden kann. Diese sehr beliebte Ferienwoche besuchten einige Mitglieder schon zum f&uuml;nften Mal. Zwei Mitglieder standen wir im letzten Sommer zur Hochzeit Spalier, n&auml;mlich f&uuml;r Regula K&auml;ppeli mit Ernst Schuler und auch f&uuml;r  Eveline Fischer mit Sepp Waldvogel.
+<br>Beim Traktandum Mutationen durften wir mit Freude Claudia Leuthard-Henggeler in den Verein aufnehmen. Der Vorstand wurde wieder best&auml;tigt und setzt sich wie bisher zusammen: Margrit Heim, Pr&auml;sidentin; Erica Fischer Vize und Tanzleiterin; Monika Br&uuml;gger Kassierin; Regula Schuler-K&auml;ppeli Protokoll und Astrid Wiederkehr.
+Einen Spezialapplaus und Dank gab es f&uuml;r die langj&auml;hrigen Aktivmitglieder: Marta Vollenweider und Josy Risi f&uuml;r 45 Jahre sowie Bethli Fischer f&uuml;r 35 Jahre. 20 Jahre in der Trachtengruppe sind Elisabeth Ineichen und Margrit Wey. Alle Rekorde schl&auml;gt aber mit 67 Jahre Aktiv-Mitgliedschaft Marie Burkart, die noch immer in den Chorproben anzutreffen ist.
+
+<br>
+<h3>Programm 2007</h3>
+Der Chor &uuml;bte im vergangenen Jahr regelm&auml;ssig mit dem M&auml;nnerchor unter der Leitung von Erika Riedo. Diesen Fr&uuml;hling steht ein ehrgeiziges Projekt an. Man will zusammen mit den  Ch&ouml;ren aus Bergdietikon und Spreitenbach, die auch von Frau Riedo geleitet werden, in der jeweiligen Ortschaft ein Konzert geben. In Merenschwand findet dies am 6. Mai in der Kirche statt. 
+<br>Frauen und M&auml;nner jeden Alters sind bei uns montags zum Singen und Tanzen immer herzlich willkommen. In diesem Jahr steht im Sp&auml;therbst wieder ein grosses Volkstheater an, wo „Kulturinteressierte“ in verschiedenen Funktionen gerne mitmachen k&ouml;nnen. Auskunft gibt die Pr&auml;sidentin Margrit Heim, Telefon 056-668 12 76.                                           
+
+<br><br><div class="right">hsch</div>
+</article>

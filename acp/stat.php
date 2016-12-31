@@ -12,11 +12,12 @@ $db = new mysql;
 $db->connect();
 if(isset($_POST['ipl']))   $db->query('DELETE FROM logs WHERE ip = "'.$_POST['ipl'].'";');
 if(isset($_POST['log'])) $db->query('DELETE FROM logs WHERE ip = "'.$_POST['log'].'";');
-$query = $db->query("SELECT count(*) as counter, max(datum) as zeit, min(datum) as mdat, ip, os, cc, wb, ref, page 
+$query = $db->query("SELECT count(*) as counter, max(datum) as zeit, min(datum) as mdat, ip, os, cc, wb, ref, page,agent 
             FROM logs GROUP BY ip
             HAVING counter >= 1 ORDER BY zeit ASC; ");
    $cc = array();  
    $wbs = array();
+   $oss = array();
    $visits = 0;    
    $visitors = 0;  
    $mdat = 0;
@@ -26,16 +27,42 @@ $query = $db->query("SELECT count(*) as counter, max(datum) as zeit, min(datum) 
         if(!is_numeric(@$cc[$row['cc']])) @$cc[$row['cc']]=1;
         else @$cc[$row['cc']]++; 
         if ($mdat == 0) $mdat = $row['mdat'];
-if (@eregi('explorer', $row['wb'])) $row['wb'] = str_replace('explorer', 'Internet Explorer', $row['wb']);
+
+if (preg_match('/#TrachtenApp#/', $row['agent']))  $row['wb']='#TrachtenApp#';        
+elseif (@eregi('explorer', $row['wb'])) $row['wb'] = str_replace('explorer', 'Internet Explorer', $row['wb']);
 elseif (@eregi('firefox', $row['wb']))  $row['wb'] = str_replace('Firefox', 'Mozilla Firefox', $row['wb']);
+elseif (@eregi('Mozilla', $row['wb']))  $row['wb'] = str_replace('Mozilla', 'Mozilla Firefox', $row['wb']);
 elseif (@eregi('chrome', $row['wb'])) $row['wb'] = str_replace('chrome', 'Google Chrome', $row['wb']);
 elseif (@eregi('iphone', $row['wb']))  $row['wb'] = str_replace('iphone', 'iPhone', $row['wb']);
 elseif (@eregi('safari', $row['wb'])) $row['wb'] = str_replace('safari', 'Safari', $row['wb']);
 elseif (@eregi('opera', $row['wb'])) $row['wb'] = str_replace('opera', 'Opera', $row['wb']);
 
+
+if (@eregi('explorer 8', $row['wb'])) $row['wb'] = 'Internet Explorer 8';
+elseif (@eregi('explorer 9', $row['wb'])) $row['wb'] = 'Internet Explorer 9';
+elseif (@eregi('explorer 10', $row['wb'])) $row['wb'] = 'Internet Explorer 10';
+elseif (@eregi('explorer 11', $row['wb'])) $row['wb'] = 'Internet Explorer 11';
+elseif (@eregi('explorer 12', $row['wb'])) $row['wb'] = 'Internet Explorer 12';
+elseif (@eregi('explorer 7', $row['wb'])) $row['wb'] = 'Internet Explorer 7';
+elseif (@eregi('explorer 6', $row['wb'])) $row['wb'] = 'Internet Explorer 6';
+elseif (@eregi('explorer', $row['wb'])) $row['wb'] = 'Internet Explorer';
+elseif (@eregi('firefox', $row['wb']))  $row['wb'] = 'Mozilla Firefox';
+elseif (@eregi('chrome', $row['wb'])) $row['wb'] = 'Google Chrome';
+elseif (@eregi('iphone 4', $row['wb'])) $row['wb'] = 'iPhone 4';
+elseif (@eregi('iphone 5', $row['wb'])) $row['wb'] = 'iPhone 5';
+elseif (@eregi('iphone 6', $row['wb'])) $row['wb'] = 'iPhone 6';
+elseif (@eregi('iphone 7', $row['wb'])) $row['wb'] = 'iPhone 7';
+elseif (@eregi('safari', $row['wb'])) $row['wb'] = 'Safari';
+elseif (@eregi('opera', $row['wb'])) $row['wb'] = 'Opera';
+elseif (@eregi('ipad', $row['wb'])) $row['wb'] = 'iPad';
+
        
         if(!is_numeric(@$wbs[$row['wb']])) @$wbs[$row['wb']]=1;
         else @$wbs[$row['wb']]++; 
+        
+        if(!is_numeric(@$oss[$row['os']])) @$oss[$row['os']]=1;
+        else @$oss[$row['os']]++;
+        
         $dddd=$row['zeit'];
         $visits = $visits+$row['counter'];
         $visitors++;
@@ -62,14 +89,18 @@ elseif (@eregi('opera', $row['wb'])) $row['wb'] = str_replace('opera', 'Opera', 
   array_multisort($krit1, SORT_DESC, $cc);    $krit1=array();
 
          
-  $inhalt.='<table><tr><td><h1>L&auml;nderstatistik</h1><table><tr><td>Land</td><td style="padding-left:10px;">Anzahl Besucher</td></tr>';
+  $inhalt.='<div style="float:left;"><h1>L&auml;nderstatistik</h1>
+  <table><tr><td>Land</td><td style="padding-left:10px;">Anzahl Besucher</td></tr>';
+
 foreach($cc as $name => $value){
+$name = (empty($name))? 'unbekannt':$name;
+if($value > 5){
 $file_to_check="./images/flags/".$name.".gif";
 if (file_exists($file_to_check))      
 $inhalt .= '<tr><td><img src="'.$file_to_check.'" style="display:inline;" width="30" height="15"> '.$name.' </td><td align="center"><!--<a href="./sql.php?sql=sqlquery&query=DELETE%20FROM%20logs%20WHERE%20cc=%27'.strtoupper($name).'%27;">--> '.$value.'<!--</a>--></td></tr>';               
  else $inhalt .= '<tr><td>'.$name.' </td><td align="center"> '.$value.'</td></tr>';
-}
-$inhalt.='</table></td>';
+}}
+$inhalt.='</table></div>';
 
 foreach ($wbs as $key => $sort) $krit1[$key]  = $sort;
 array_multisort($krit1, SORT_DESC, $wbs);
@@ -77,20 +108,32 @@ array_multisort($krit1, SORT_DESC, $wbs);
 
 
 
-$inhalt.='<td><h1>Browserstatistik</h1><table><tr><td>Browser</td><td style="padding-left:10px;">Anzahl Benutzer</td></tr>';
+$inhalt.='<div style="float:left;padding-left:50px;"><h1>Browserstatistik</h1>
+<table><tr><td>Browser</td><td>Anzahl Benutzer</td></tr>';
+
 foreach($wbs as $name => $value){
-if (@eregi('explorer 8', $name)) $file_to_check="./images/ie8.png";
-elseif (@eregi('explorer 9', $name)) $file_to_check="./images/ie8.png";
-elseif (@eregi('explorer', $name)) $file_to_check="./images/ie.png";  
+if (@eregi('explorer 8', $name)) $file_to_check="./images/browser/ie8.png";
+elseif (@eregi('explorer 9', $name)) $file_to_check="./images/browser/ie8.png";
+elseif (@eregi('explorer', $name)) $file_to_check="./images/browser/ie.png";  
 elseif (@eregi('firefox', $name))  $file_to_check="./images/ff.png";
-elseif (@eregi('chrome', $name)) $file_to_check="./images/browser_chrome.png";
-elseif (@eregi('opera', $name)) $file_to_check="./images/browser_opera.png";
-elseif (@eregi('safari', $name)) $file_to_check="./images/browser_safari.png";
+elseif (@eregi('chrome', $name)) $file_to_check="./images/browser/browser_chrome.png";
+elseif (@eregi('opera', $name)) $file_to_check="./images/browser/browser_opera.png";
+elseif (@eregi('safari', $name)) $file_to_check="./images/browser/browser_safari.png";
 if (file_exists($file_to_check))      
 $inhalt .= '<tr><td><img src="'.$file_to_check.'" style="display:inline;" width="20"> '.$name.' </td><td align="center"> '.$value.'</td></tr>';               
  else $inhalt .= '<tr><td>'.$name.' </td><td align="center"> '.$value.'</td></tr>';
 }
-$inhalt.='</table></td></tr></table>';
+$inhalt.='</table></div>';
+
+
+$inhalt.='<div style="float:left;padding-left:50px;"><h1>OS-Stat</h1>
+<table><tr><td>PC-OS</td><td style="padding-left:10px;">Anzahl Benutzer</td></tr>';
+
+foreach($oss as $name => $value){
+$inhalt .= '<tr><td>'.$name.' </td><td align="center"> '.$value.'</td></tr>';
+}
+
+$inhalt .= '</table></div><br style="clear:both;">';
 
 //eval("\$inhalt .=\"".gettemplate("./templates/stat.tpl")."\";");
            

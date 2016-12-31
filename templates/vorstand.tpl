@@ -1,84 +1,52 @@
-<center><h1>Vorstand</h1><center><br><br>
-<img src="./images/vorstand/vorstand_2013.jpg">
+<center><h1>Vorstand</h1></center><br>
+
+<center><img src="./images/galerie/diverses/vorstand/bilder/vorstand_2013.jpg" alt="Vorstand seit 2013"></center>
+
 <br>
-    <br>
-    <table border="0" cellspacing="10">
-      <tr><td>
-          <img src="./images/vorstand/margritmt.jpg" ></td><td></td><td><b>Pr&auml;sidentin</b><br>Margrit Heim-Fischer
+<br>
+<div style="margin:auto;max-width:430px;">
+<div style="float:left;padding-right:20px;" class="left">
+          <img src="./images/galerie/diverses/vorstand/bilder/margrit.jpg" alt="Margrit Heim-Fischer">
+          <br>
+          <b>Pr&auml;sidentin</b><br>Margrit Heim-Fischer
           <br>Schorenstrasse 46
           <br>5642 M&uuml;hlau
-          <br>Tel: 056 668 12 76
+          <br>Tel: 056 668 12 76  
+</div>
+   
+<div style="float:right;" class="left">
+   <img src="./images/galerie/diverses/vorstand/bilder/claudia.jpg" alt="Claudia Leuthard" >
           <br>
-          <br></td><td>
-          <img src="./images/vorstand/erica.jpg" ></td><td></td><td><b>Vice-Pr&auml;sidentin</b><br>Erica Fischer-G&uuml;rber 
+          <b>Kassiererin</b><br>Claudia Leuthard 
+          <br>Hagnau 8
+          <br>5634 Merenschwand
+          <br>Tel: 056 664 57 42      
+</div>
+<div class="left" style="margin:auto;">
+          <img src="./images/galerie/diverses/vorstand/bilder/erica.jpg" alt="Erica Fischer-G&uuml;rber" >
+          <br>
+          <b>Vice-Pr&auml;sidentin</b><br>Erica Fischer-G&uuml;rber 
           <br>Herdmattenstr. 30
           <br>5636 Benzenschwil
-          <br>Tel: 056 668 12 85 
+          <br>Tel: 056 668 12 85
+</div>          
+<br class="clear">          
+<div style="float:left;" class="left">
+          <img src="./images/galerie/diverses/vorstand/bilder/michaela.png" alt="Michaela Kathriner" >
           <br>
-          <br></td>
-      </tr>
-      <tr>
-        <td >
-          <img src="./images/vorstand/michaela.jpg" ></td><td></td><td><b>Varia</b><br>Michaela Kathriner
+          <b>Varia</b><br>Michaela Kathriner
           <br>Reitibuechstrasse 12 
           <br>5636 Benzenschwil
           <br>Tel: 056 664 53 13
-          <br>
-          <br></td>
-          
-                  <td><img src="./images/vorstand/claudia.jpg" ></td><td></td><td><b>Kassiererin</b><br>Claudia Leuthard 
-          <br>Hagnau 8
-          <br>5634 Merenschwand
-          <br>Tel: 056 664 57 42
-          <br>
-          <br>
-          <br></td>
-      </tr>
-      </table>
-      <table align="center">
-      <tr>
-      
-       <td><img src="./images/vorstand/adriano.jpg" ></td>
-       <td></td><td><b>Aktuar &amp; Webmaster</b><br>Adriano H&auml;nggli
+</div>
+   
+<div style="float:right;" class="left"> <br>
+<img src="./images/galerie/diverses/vorstand/bilder/adriano.jpg" alt="Adriano H&auml;nggli" >
+       <br> 
+       <b>Aktuar & Webmaster</b><br>Adriano H&auml;nggli
           <br>Oberdorfstrasse 8
           <br>5628 Birri
-          <br> Tel: 056 664 47 93</td>
- 
-          
-      </tr>
-    </table>
-    <hr>
- <center><h1>Leiterinnen:</h1>
-      <center>
-        <br><b>Pr&auml;sidentin &amp; Kindertanzleiterin</b>
-        <br>
-        <br>
-        <table border="0">
-          <tr><td>
-              <img src="./images/vorstand/margrit.jpg" ></td><td></td><td>Margrit Heim-Fischer
-              <br>Schorenstrasse 46
-              <br>5642 M&uuml;hlau
-              <br>Tel: 056 668 12 76
-              <br>
-              <br></td>
-          </tr>
-        </table>
-        <br>
-        <br>
-        <table border="0">
-          <tr><td></td><td><b>Dirigentin</b></td><td></td><td><b>Tanzleiterin</b></td>
-          </tr>
-          <tr>
-            <td align="center" >
-              </td><td>Beatrice Helm
-              <br>Usserdorfstr. 8
-              <br>8104 Weinigen
-              <br></td><td>
-              <img src="./images/vorstand/eveline.jpg" ></td><td>Eveline Waldvogel 
-              <br>Siebeneichenstr. 17 
-              <br>5634 Merenschwand
-              <br>Tel: 056 664 13 78 
-              <br>
-              <br></td>
-          </tr>
-        </table>
+          <br> Tel: 056 664 47 93      
+</div>          
+ <br class="clear"> 
+</div> 

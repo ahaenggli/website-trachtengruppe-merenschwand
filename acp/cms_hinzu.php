@@ -16,8 +16,8 @@ eval("\$eintrag .=\"".gettemplate("./templates/cms_hinzu.tpl")."\";");
 }
 if(isset($_POST['hinzu'])){
   
-    $header  = $_POST['header'];
-    $message = $_POST['message'];
+    $header  = utf8_decode($_POST['header']);
+    $message = utf8_decode($_POST['message']);
     $aktiv   = (!empty($_POST['aktiv']))? $_POST['aktiv']: "1";
     $datum    = time();
     $message  = str_replace("\n", "<br>", $message );

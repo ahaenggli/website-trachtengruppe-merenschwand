@@ -20,6 +20,8 @@ if(isset($_POST['DelJahr'])){
     header('LOCATION: gal.html');
 
 }
+
+if(!isset($_GET['gid']) && isset($_POST['gid'])) $_GET['gid'] = $_POST['gid'];  
     
 if(isset($_POST['main_jahr']))
 {
@@ -37,7 +39,7 @@ $inhalt.='<fieldset style="text-align:left;width:500px;"><legend>Bestehende Haup
 for($i=0;$i<=(count($gals)-1);$i++)//$i>=0;$i--) 
 {
 $gals[$i] = str_replace('../images/galerie/', '', $gals[$i]);        
-$inhalt.= '<a href="gal_jahr_'.$gals[$i].'.shtml" style="font-size:14px;text-decoration:none;">>'.$gals[$i].'< bearbeiten</a><br>';
+if($gals[$i]!='diverses') $inhalt.= '<a href="gal_jahr_'.$gals[$i].'.shtml" style="font-size:14px;text-decoration:none;">>'.utf8_encode($gals[$i]).'< bearbeiten</a><br>';
 }     
 $inhalt.= '</fieldset>
 
@@ -60,14 +62,14 @@ $gals = list_all($main_path);
 
 $inhalt.='<fieldset style="text-align:left;width:650px;"><legend style="text-align:left;width:400px">Bestehende Galerien f&uuml;r >'.$main_jahr.'< ';
 $inhalt.= '<form method="post" action="gal.html" style="display:inline;float:right;">'; 
-$inhalt.= '<input type="hidden" name="DelJahr" value="'.$main_jahr.'"><input type="submit" name="Delly" value="Alles löschen"></form>';
+$inhalt.= '<input type="hidden" name="DelJahr" value="'.$main_jahr.'"><input type="submit" name="Delly" value="Alles l&ouml;schen"></form>';
 $inhalt.= '</legend><br>'; 
 
 for($i=0;$i<=(count($gals)-1);$i++)//$i>=0;$i--) 
 {
 $lf = list_files($gals[$i].'/');
 $fc = file($lf[0]);
-$inhalt.= '  <a href="gal_gid_'.$i.'_jahr_'.$main_jahr.'.shtml" style="font-size:14px;text-decoration:none;">'.($i+1).'. >'.trim($fc[0]).'< bearbeiten</a><br>';
+$inhalt.= '  <a href="gal_gid_'.$i.'_jahr_'.$main_jahr.'.shtml" style="font-size:14px;text-decoration:none;">'.($i+1).'. >'.utf8_encode(trim($fc[0])).'< bearbeiten</a><br>';
 }
 $inhalt.= '</fieldset>';                
 
@@ -190,7 +192,17 @@ $gals = list_all($main_path);
       $name = explode('/', $name);
       $name = end($name);
       $ne = explode('.', $name);
-      $datei = str_pad(($ne[0]+1).'.jpg', 8 ,'0', STR_PAD_LEFT); 
+      
+      $name_org = $_FILES[$upload_name]["name"][$key];
+      $FileTyp = 'jpg';
+      if(contains($name_org, '.png')) $FileTyp = 'png';
+      
+      if($main_jahr == 'diverses'){
+      if(!file_exists($pb.$name_org)) $datei = $name_org;
+      else $datei = str_pad(($ne[0]+1).'.'.$FileTp, 8 ,'0', STR_PAD_LEFT);
+      
+      }
+      else $datei = str_pad(($ne[0]+1).'.'.$FileTp, 8 ,'0', STR_PAD_LEFT); 
 	
        move_uploaded_file($_FILES[$upload_name]['tmp_name'][$key], $pb.$datei);
                   $file        = $pb.$datei;
@@ -198,7 +210,8 @@ $gals = list_all($main_path);
                   $max_width   = "800"; //Breite ändern
                   $max_height   = "600"; //Höhe ändern
                   $quality     = "100"; //Qualität ändern (max. 100)
-                  $src_img     = imagecreatefromjpeg($file);
+                  if($FileTyp == 'png')  $src_img     = imagecreatefrompng($file);
+                  else $src_img     = imagecreatefromjpeg($file);
                   $picsize     = getimagesize($file);
                   $src_width   = $picsize[0];
                   $src_height  = $picsize[1];
@@ -224,7 +237,7 @@ $gals = list_all($main_path);
                   $target2    = $pt.$datei;
                   $max_width   = "200"; //Thumbnailbreite
                   $max_height   = "150"; //Thumbnailhöhe
-                  $quality     = "90"; //Thumbnailqualität
+                  $quality     = "100"; //Thumbnailqualität
                   $src_img     = imagecreatefromjpeg($file2);
                   $picsize     = getimagesize($file2);
                   $src_width   = $picsize[0];
@@ -249,7 +262,7 @@ $gals = list_all($main_path);
 
 	//echo "File Received ". $save_path.$file_name;
 	}
-
+     if($main_jahr == 'diverses') header("LOCATIOIN: ".$_SERVER['HTTP_REFERER']);
     
     }
 if(isset($_POST['delete'])){
@@ -281,36 +294,84 @@ $egals = explode('/',end($gals));
     }
     $gals = list_all($main_path);
     $lf = list_files($gals[$_GET['gid']].'/');
-save($gals[$_GET['gid']].'/infos.txt', $_POST['titel']."\n\r".$_POST['text']);
+save($gals[$_GET['gid']].'/infos.txt', utf8_decode($_POST['titel']."\n\r".$_POST['text']));
 }
 
-
-
-$lf = list_files($gals[$_GET['gid']].'/');
-$lt = list_files($gals[$_GET['gid']].'/thumbs/');
-    
 if (isset($_POST['save'])){
+
+if (isset($_POST['cb'])){
     $cbs = $_POST['cb'];
     for($i=0;$i<count($cbs);$i++){
       if (@$cbs[$i]!='') {
       unlink($cbs[$i]);
       unlink(str_replace('thumbs', 'bilder', $cbs[$i]));
-      header('LOCATION: gal_gid_'.$_GET['gid'].'.shtml');
+      if($main_jahr == 'diverses') header("LOCATIOIN: ".$_SERVER['HTTP_REFERER']);
+      else header('LOCATION: gal_gid_'.$_GET['gid'].'.shtml');
       }
     }
     }
+    }
+
+$lf = list_files($gals[$_GET['gid']].'/');
+$lt = list_files($gals[$_GET['gid']].'/thumbs/');
+    
+if (isset($_POST['save'])){
 
 
-$fc = file($lf[0]);
-$inhalt.= '<form method="post" action="gal_gid_'.$_GET['gid'].'_jahr_'.$main_jahr.'.shtml"><table><tr><td>Galerietitel:</td><td><input type="text" style="width:500px;" name="titel" value="'.$fc[0].'"></td></tr>'; $fc[0]='';
-$inhalt.= '<tr><td valign="top">Galerietext:</td><td><textarea name="text" style="width:500px;height:100px;">'.implode('', $fc).'</textarea></td></tr></table>';
-$inhalt.= '<input type="submit" name="submit" value="Speichern"> <input type="submit" name="delete" value="Galerie löschen"></form>';
+if (isset($_POST['drehen'])){
+    $cbs =  array_unique($_POST['drehen']);
+    for($i=0;$i<count($cbs);$i++){
+      if (@$cbs[$i]!='') {           
+         
+      $source = imagecreatefromjpeg($cbs[$i]);
+      $rotate = imagerotate($source, -90, 0);
+      $zzz=imagejpeg($rotate,$cbs[$i],100);
+       
+      $cbs[$i] = (str_replace('thumbs', 'bilder', $cbs[$i]));
+      $source = imagecreatefromjpeg($cbs[$i]);
+      $rotate = imagerotate($source, -90, 0);
+      $zzz=imagejpeg($rotate,$cbs[$i],100);      
+      }
+    }
+    }
+        
+    $descs =    $_POST['beschrieb'];
+    foreach(  $descs as $d=>$k)
+    {
+    $d = str_replace('.jpg', '', $d);
+    $d = str_replace('.JPG', '', $d);
+    $d = str_replace('.jpeg', '', $d);
+    $d = str_replace('.JPEG', '', $d);
+    $d = trim($d);
+    $d = (!empty($d))? $gals[$_GET['gid']].'/txt/'.$d.'.txt':'';
+    
+    $k = trim($k);
+    if(!empty($k)){ 
+      if(!is_dir($gals[$_GET['gid']].'/txt/'))
+      {    
+      mkdir($gals[$_GET['gid']].'/txt/', 0777); 
+      chmod($gals[$_GET['gid']].'/txt/', 0777); 
+       }
+    save($d,   utf8_decode($k)) ;}
+    else @unlink($d);
+    
+    }
+    
+    
+    }
+
+
+$fc = @file($lf[0]);
+if($main_jahr <> 'diverses'){
+$inhalt.= '<form method="post" action="gal_gid_'.$_GET['gid'].'_jahr_'.$main_jahr.'.shtml"><table><tr><td>Galerietitel:</td><td><input type="text" style="width:500px;" name="titel" value="'.utf8_encode($fc[0]).'"></td></tr>'; $fc[0]='';
+$inhalt.= '<tr><td valign="top">Galerietext:</td><td><textarea name="text" style="width:500px;height:100px;">'.utf8_encode(implode('', $fc)).'</textarea></td></tr></table>';
+$inhalt.= '<input type="submit" name="submit" value="Speichern"> <input type="submit" name="delete" value="Galerie l&ouml;schen"></form>';
 $inhalt.= '<br><br>';
-
+}
 
 $inhalt.='<div id="content">
 
-	<form id="form1" action="gal_gid_'.$_GET['gid'].'_jahr_'.$main_jahr.'.shtml" method="post" enctype="multipart/form-data">
+	<form id="form1" method="post" enctype="multipart/form-data">
 	
 			<fieldset>
 			<legend>Warteschlange</legend>
@@ -319,24 +380,40 @@ $inhalt.='<div id="content">
 				 <input type="file" multiple="multiple" name="datei[]" id="files"   />
               <input type="submit" value="Hochladen">    (max. 20 gleichzeitig!)
               <input type="hidden" value="php" name="upload">
+              <input type="hidden" value="'.$_GET['gid'].'" name="gid">
+              <input type="hidden" value="'.$main_jahr.'" name="main_jahr">
 				</fieldset>
 
 	</form>
 </div>';
 $inhalt.= '<br>';
-$inhalt.= '<form METHOD="POST"><table><tr><td>Bild</td><td>Dateiname:</td><td>L&ouml;schen?</td><td style="padding-left:50px;">Bild</td><td>Dateiname:</td><td>L&ouml;schen?</td></tr>';
+$inhalt.= '<form METHOD="POST">
+<table>
+<tr><td>Bild</td><td>Dateiname:</td><td>Beschreibung:</td><td>90&#176; drehen?</td><td>L&ouml;schen?</td></tr>';
 for($i=0;$i<count($lt);$i++){
 $pic = $lt[$i];
 $n = explode('/', $pic);
 $n = $n[count($n)-1];
-$inhalt.= '<tr><td><img src="'.$pic.'"></td><td><input type="text" name="name[]" value="'.$n.'" style="width:75px;"></td><td style="text-align:right;"><input type="checkbox" name="cb[]" value="'.$pic.'"></td>';
-$i++;
+ 
+ $d = explode('.', $n);
+ $d = $d[0];
+ $d = trim($d);
+ $d = (!empty($d))? $gals[$_GET['gid']].'/txt/'.$d.'.txt':'';
+ $d = (!empty($d))? utf8_encode(@implode("", @file($d))):'';   
+ 
+ if($main_jahr == 'diverses') $d = "Link:\r\n<img src=\"".str_replace('thumbs', 'bilder', str_replace('../', './', $pic))."\">";
+$inhalt.= '<tr><td><img src="'.$pic.'"></td><td><input type="text" name="name[]" value="'.$n.'" style="width:75px;"></td>
+<td><textarea type="text" name="beschrieb['.$n.']" style="width:300px;height:100px;">'.$d.'</textarea></td>
+<td style="text-align:right;"><input type="checkbox" name="drehen[]" value="'.$pic.'"></td>
+<td style="text-align:right;"><input type="checkbox" name="cb[]" value="'.$pic.'"></td>';
+/*$i++;
 if($i<count($lt)){
 $pic = $lt[$i];
 $n = explode('/', $pic);
 $n = $n[count($n)-1];
 $inhalt.= '<td style="padding-left:50px;"><img src="'.$pic.'"></td><td><input type="text" name="name[]" style="width:75px;" value="'.$n.'"></td><td style="text-align:right;"><input type="checkbox" value="'.$pic.'" name="cb[]"></td>';
-}else '<td></td><td></td><td></td><td></td><td></td><td></td>';
+}else*/ 
+'<td></td><td></td><td></td><td></td><td></td><td></td>';
 
 $inhalt.= '</tr>';
 }

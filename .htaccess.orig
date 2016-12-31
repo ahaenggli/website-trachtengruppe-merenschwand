@@ -1,0 +1,72 @@
+AddType text/x-component htc
+RewriteEngine on
+    rewritecond %{http_host} ^trachtengruppe-merenschwand.ch [nc]
+    rewriterule ^(.*)$ http://www.trachtengruppe-merenschwand.ch/$1 [r=301,nc]
+
+RewriteRule ^([a-z-A-Z_0-9]+).html$ index.php?p=$1
+RewriteRule ^neues_(.*).shtml$ index.php?p=neues&id=$1
+RewriteRule ^archiv_(.*).shtml$ index.php?p=neues&id=$1&z=archiv
+RewriteRule ^neuigkeitenarchiv.shtml$ index.php?p=neues&id=-1
+
+RewriteRule ^img_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=foto_galerie&gal=$1&img=$2
+RewriteRule ^galerie_([-_0-9]+)-([-_0-9]+).shtml$ index.php?p=foto_galerie&gal=$1&los=$2
+RewriteRule ^galerie_([-_0-9]+).shtml$ index.php?p=fotos&y=$1
+RewriteRule ^fotos-([-_0-9]+).shtml$ index.php?p=fotos&seite=$1
+RewriteRule ^foto_galerie_albumpics_([-_0-9]+).js$ js.php?nr=$1
+
+RewriteRule ^sitemap.xml$ sitemap.php
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=604800, public"
+#604800
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+#gzip Compression if availiable
+<IfModule mod_gzip.c>
+ mod_gzip_on       Yes
+ mod_gzip_dechunk  Yes
+ mod_gzip_item_include file      \.(html?|txt|css|js|php|pl)$
+ mod_gzip_item_include handler   ^cgi-script$
+ mod_gzip_item_include mime      ^text/.*
+ mod_gzip_item_include mime      ^application/x-javascript.*
+ mod_gzip_item_exclude mime      ^image/.*
+ mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+<IfModule mod_headers.c>
+ <FilesMatch ".(js|css|xml|gz|html)$">
+     Header append Vary: Accept-Encoding
+  </FilesMatch>
+</ifModule> 
+AddHandler php5-fastcgi .php .php5

@@ -1,20 +1,31 @@
-<form name="form" method="post" action="$file">
-  <table width="400" cellpadding="2" cellspacing="2">
+<h2>Kontaktangaben</h2>
+
+<div class="design design-text">
+<h2>Briefanschrift</h2>
+Trachtengruppe Merenschwand <br>
+5634 Merenschwand
+</div>
+
+<form name="form" method="post" action="$file" class="design design-text">
+<h2>Kontaktformular</h2>
+  <table style="width:400px;">
     <tr>
       <td>Ihr Name:</td> 
       <td> 
-        <input name="name" type="text" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px"></td>
+        <input name="name" type="text" value="$_POST[name]" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px"></td>
   
     </tr>
     <tr> 
       <td>Ihre E-Mail Adresse:</td> 
       <td> 
-        <input name="email" type="text" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px"></td>
+        <input name="email" type="text" value="$_POST[email]" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px"></td>
     </tr>
     <tr> 
       <td>Ihre Mitteilung:</td> 
       <td> 
-<textarea name="message" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px; height:100px" rows="4" cols="15"></textarea></td>
+<textarea name="message" style="font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px; height:100px" rows="4" cols="15">
+$_POST[message]
+</textarea></td>
     </tr>
     <tr> 
       <td> Wie viel ist $Zahl_1 plus $Zahl_2 ?</td> 
@@ -26,7 +37,6 @@
     <tr> <td>M&ouml;gliche Aktionen</td> <td>
 
         <input name="submit" type="submit" value="Senden" $disabled> 
-        <input name="reset" type="reset" value="Zur&uuml;cksetzen">
       </td>
     </tr>
   </table>

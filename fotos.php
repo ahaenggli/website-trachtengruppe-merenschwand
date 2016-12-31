@@ -1,58 +1,14 @@
 <?php
-function pager($zeilen, $seite, $pro_seite, $url) {
-
-$max_ausgabe = $pro_seite;
-$gesamtseiten = floor(($zeilen - 1) / $pro_seite+1);
-
-$aktuelle_seite = $seite ? $seite : 1;
-$linkanzahlausgabe = 3;
-
-$letzte = $linkanzahlausgabe + $aktuelle_seite;
-if ($letzte > $gesamtseiten) {
-$letzte = $gesamtseiten;
-}
-
-$startback = $aktuelle_seite - $linkanzahlausgabe;
-if ($startback < 1) {
-$startback = 1;
-}
-
-$navigationslinks = "&nbsp;";
-if ($gesamtseiten != 1 && $zeilen) {
-$seitenlink = "";
-
-if ($startback > 1) {
-$prevbl = $aktuelle_seite - 1;
-$seitenlink .=  "<td class=\"pl\"><a href=\"".$url."-1.shtml\" title=\"Erste Seite aufrufen\">&#171; &#171;</a></td><td class=\"pl\"><a href=\"$url-$prevbl.shtml\" title=\"Eine Seite zurück\">&#171;</a></td>";
-}
-
-for ($i = $startback; $i <= $letzte; $i++) {
-if ($aktuelle_seite == "$i") {
-$seitenlink .= "<td class=\"aktuelleseite\">$i</td>";
-} else {
-$seitenlink .= "<td class=\"pl\"><a href=\"".$url."-".$i.".shtml\">$i</a></td>";
-}
-}
-
-if ($letzte < $gesamtseiten) {
-$nextbl = $aktuelle_seite + 1;
-$seitenlink .= "<td class=\"pl\"><a href=\"".$url."-".$nextbl.".shtml\" title=\"Eine Seite weiter\">&#187;</a></td><td class=\"pl\"><a href=\"".$url."-".$gesamtseiten.".shtml\" title=\"Letzte Seite aufrufen\">&#187; &#187;</a></td>";
-}
-
-$pageinfo = "<td class=\"seiteninfo\">Seite: $aktuelle_seite von $gesamtseiten</td>";
-$navigationslinks = "<table cellspacing=\"1\" cellpadding=\"0\" border=\"0\" class=\"sitenav\"><tr>$pageinfo $seitenlink $galtext</tr></table>";
-}
-
-return $navigationslinks;
-}
 $is_y = false;
-
+$Anchor = (check_mobile())? "#main":'';
 
 $gals2 =  (list_all('./images/galerie/'));  $gals=array();
 foreach ($gals2 as $tmp){
 $tmpa =  list_all($tmp.'/');
 
-foreach ($tmpa as $tt) $gals[] =  $tt;
+foreach ($tmpa as $tt) {
+if($tt!='diverses') $gals[] =  $tt;
+}
 }           
                                      
 
@@ -78,19 +34,25 @@ $aktuelle_seite = (isset($_GET['seite']) and is_numeric($_GET['seite']) and ($_G
 $beginn = $anzahl_eintraege - ($aktuelle_seite*$eintraege_pro_seite-$eintraege_pro_seite);
 $ende =   $anzahl_eintraege - ($aktuelle_seite*$eintraege_pro_seite)+1;
 if ($ende<0) $ende = 0;
-$inhalt.= '<h1>Fotogalerie '.(($is_y)?$_GET['y']:"").'</h1><br><center>'.pager($anzahl_eintraege, $aktuelle_seite, $eintraege_pro_seite, "fotos").'</center>';
+$inhalt.= '<section><h1>Fotogalerie '.(($is_y)?$_GET['y']:"").'</h1>
+'.pager($anzahl_eintraege, $aktuelle_seite, $eintraege_pro_seite, "fotos").'';
 
 for($i=$beginn;$i>=$ende;$i--) {
       if ($gals[$i]<>''){  
 $lf = list_files($gals[$i].'/');
     
 $fc = file($lf[0]);
-  $inhalt.= '<div class="sym"><a href="galerie_'.($i+1).'-1.shtml" ><b>'.$fc[0].'</b></a><br><a href="galerie_'.($i+1).'-1.shtml"><img src="'.(list_file($gals[$i].'/thumbs/')).'" alt="trachtengruppe" title="'.$fc[0].'"><img src="'.(list_file($gals[$i].'/thumbs/', 1)).'" alt="trachtengruppe" title="'.$fc[0].'"><img src="'.(list_file($gals[$i].'/thumbs/', 2)).'" alt="trachtengruppe" title="'.$fc[0].'"></a>
+$fc[0] = trim($fc[0]);
+  $inhalt.= '<article class="design design-ok galerie"><a href="galerie_'.($i+1).'-1.shtml'.$Anchor.'" style="text-decoration:none;"><h2 class="hell">'.$fc[0].'</h2></a>
+  <a href="galerie_'.($i+1).'-1.shtml'.$Anchor.'" style="text-decoration:none;">
+  <img src="'.(list_file($gals[$i].'/thumbs/', 0)).'" alt="'.$fc[0].'" title="'.$fc[0].'" style="max-width:250px;max-height:150px;">
+  <img src="'.(list_file($gals[$i].'/thumbs/', 1)).'" alt="'.$fc[0].'" title="'.$fc[0].'" style="max-width:250px;max-height:150px;">
+  <img src="'.(list_file($gals[$i].'/thumbs/', 2)).'" alt="'.$fc[0].'" title="'.$fc[0].'" style="max-width:250px;max-height:150px;">
+  </a>
                               
-</div>
- <br>';       }
+</article>';       }
 }
- $inhalt.= '<center>'.pager($anzahl_eintraege, $aktuelle_seite, $eintraege_pro_seite, "fotos").'</center>';
+ $inhalt.= ''.pager($anzahl_eintraege, $aktuelle_seite, $eintraege_pro_seite, "fotos").'</section>';
 
 
 ?>

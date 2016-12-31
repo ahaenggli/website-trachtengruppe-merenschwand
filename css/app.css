@@ -1,0 +1,52 @@
+/*App*/
+.titel {
+	clear: both;
+	font-size: 22px;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-left: 0px;
+	color: gray;
+}
+.sym {
+	padding-bottom: 10px;
+}
+.facebook {
+	display: none;
+}
+.menu_top,
+#nav_bottom {
+	display: block;
+}
+#nav_top {
+	display: none;
+}
+.menu_top, a.menu_top, a.menu_top:visited {
+	float: right;
+	color: #fff;
+	background: #4e4e4e;
+	text-decoration: none;
+	margin-right: 20px;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+a.menu_top:hover, a.numenu_toprApp:focus {
+	color: #1c1c1c;
+	background: #ccc;
+}
+header .titel, header .logomeri {
+	display: none;
+}
+.facebook {
+	display: none;
+}
+.menu_top, a.menu_top, a.menu_top:visited {
+	margin-top: 50px;
+}

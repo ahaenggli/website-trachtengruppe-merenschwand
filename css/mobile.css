@@ -1,0 +1,129 @@
+/* Mobile */
+header img {max-width: 200px;}
+.nurMobile {display: block;}
+.MobileHide {display: none;}
+
+.bg, nav, main, header, footer {
+	max-width: 320px;
+	margin: 0px auto;
+	text-align: left;
+}
+.center {text-align: left;}
+
+/* MENU */
+nav {
+	padding: 0;
+	background-color: white;
+	text-align: left;
+   
+}
+* ul {
+	padding: 0px 3px;
+	margin: 0;
+	float: none;
+}
+nav li {
+	list-style: none;              
+}
+nav li ul {
+	margin: 0;
+	padding: 0px 0px;
+	position: relative;
+	display: none;
+	min-width: 75px;
+	background-color: white;
+	border: 0px solid black;
+	text-decoration: none;
+	white-space: nowrap;
+}
+nav li:hover ul, nav li:focus ul {
+	display: block;
+}
+nav li ul a:hover, nav li ul a:focus {
+	border-left: 0px;
+	border-right: 0px;
+	display: block;
+}
+nav ul a, nav ul a:visited {
+	display: block;
+	background-color: #33ee55;
+  font-size:16px;
+	padding: 10px 2px 10px 2px;
+  margin-top:5px;
+  margin-bottom:5px;
+	font-weight: bold;
+	white-space: nowrap;
+	color: #5155a2;
+	text-decoration: none;
+}
+nav ul li ul a {
+  font-size:16px;
+	padding: 10px 2px 10px 2px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+nav ul a:hover, nav ul a:focus {
+	background-color: #5155a2;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	color: #33ee55;
+	text-decoration: none;
+	white-space: nowrap;
+}
+/* 3. Ebene */
+nav ul ul ul, nav ul li:hover ul ul, nav ul li:hover ul ul ul, nav ul li:focus ul ul, nav ul li:focus ul ul ul {
+	display: none;
+	width: auto;
+	left: 0%;
+	margin-top: 0px;
+}
+nav ul li:hover ul, nav ul ul li:hover ul, nav ul ul ul li:hover ul, nav ul li:focus ul, nav ul ul li:focus ul, nav ul ul ul li:focus ul {
+	display: block;
+	margin-left: 10px;
+}
+.titel {
+	clear: both;
+	font-size: 22px;
+	font-weight: normal;
+	padding-top: 10px;
+	padding-left: 0px;
+	color: gray;
+}
+main img {
+	max-width: 300px !important;
+}
+main  .galerie img {
+	max-width: 95px !important;
+}
+main  .bild_einzel img {
+	max-width: 300px !important;
+}
+
+
+.facebook {display:none;}
+.menu_top, #nav_bottom{ display:block;}
+#nav_top {display:none;}
+
+.menu_top, a.menu_top, a.menu_top:visited{
+    float: right;
+    color: #fff;
+    background: #4e4e4e;
+    text-decoration: none;
+    margin-right:20px;
+    padding:5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.menu_top:hover,
+a.numenu_toprApp:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}

@@ -1,11 +1,15 @@
 <?php
-require_once('../acp/functions/tpl.php');
-require_once('../acp/functions/mysql.php');
-require_once('../acp/functions/functions.php');
-require_once('../acp/functions/image.php');
-require_once('../acp/functions/phpmailer.php');
+/* Funktionen laden */
+if($dir=opendir('./functions/'))
+{
+ while($file=readdir($dir)) {
+  if (!is_dir('./functions/'.$file) && $file != "." && $file != "..") require_once('./functions/'.$file);
+ }
+closedir($dir);
+}
+
 $title = 'Admin Control-Panel';
-$style = '../css/style.css';
+$style = '../css/neu_style.css';
 $page = (!isset($_GET['p']) OR $_GET['p']=='index')? "anfang": $_GET['p'];
 $inhalt = "";
 $menu = "";

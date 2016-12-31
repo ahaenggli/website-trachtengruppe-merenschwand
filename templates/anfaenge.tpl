@@ -1,8 +1,8 @@
-<br><h2>Die Anf&auml;nge der Trachtengruppe Merenschwand AG</h2>
+<br><h1>Die Anf&auml;nge der Trachtengruppe Merenschwand AG</h1>
 <br><b>1930</b> haben sich, anl&auml;sslich der 100-Jahr-Feier des Frei&auml;mtersturms, zw&ouml;lf Frauen entschlossen eine Frei&auml;mter Sonntagstracht zu n&auml;hen. Am 7. Dezember 1930 wurde sie am Umzug das erste Mal getragen. Die treibende Kraft dazu waren Bertha Fischer, Lehrerin und der Dorfarzt Dr. Paul Ruepp. 
 <br> 
-<br><b>1932</b> wollte man sich der Schweizerischen Trachtenvereinigung anschliessen. Dies f&uuml;hrte dazu, dass die neuen Trachten von der Kantonalpr&auml;sidentin Frau Laur begutachtet werden mussten. W&ouml;rtlich aus dem Protokoll: „Da ist es uns b&ouml;s gegangen. Die Kantonalpr&auml;sidentin hatte &uuml;berall etwas auszusetzen. Die Trachten mussten zum Teil umgearbeitet werden, dass die Gruppe an das Schweizerische Trachtenfest in Altdorf konnte.“ Der Mitgliederbeitrag betrug drei Franken. 
-<br>Der Mitbegr&uuml;nder Dr. Paul Ruepp wurde als Ehrenmitglied aufgenommen und wurde „Trachteng&ouml;tti“ genannt. 
+<br><b>1932</b> wollte man sich der Schweizerischen Trachtenvereinigung anschliessen. Dies f&uuml;hrte dazu, dass die neuen Trachten von der Kantonalpr&auml;sidentin Frau Laur begutachtet werden mussten. W&ouml;rtlich aus dem Protokoll: &bdquo;Da ist es uns b&ouml;s gegangen. Die Kantonalpr&auml;sidentin hatte &uuml;berall etwas auszusetzen. Die Trachten mussten zum Teil umgearbeitet werden, dass die Gruppe an das Schweizerische Trachtenfest in Altdorf konnte.&rdquo; Der Mitgliederbeitrag betrug drei Franken. 
+<br>Der Mitbegr&uuml;nder Dr. Paul Ruepp wurde als Ehrenmitglied aufgenommen und wurde &bdquo;Trachteng&ouml;tti&rdquo; genannt. 
 <br>
 <br><b>1933</b> an einer Frei&auml;mter Versammlung in Muri gab es Diskussionen &uuml;ber die teure Stickerei an der Festtagstracht. Es war sogar von Weglassen der Stickerei die Rede, damit die Tracht g&uuml;nstiger k&auml;me. Zum Gl&uuml;ck kam man von diesem Gedanken wieder ab. Bertha Fischer war der Meinung, man m&uuml;sse halt etwas l&auml;nger sparen, um eine Festtagstracht anschaffen zu k&ouml;nnen. Die Trachtengruppe z&auml;hlte nun 20 Mitglieder. 
 <br> 
@@ -16,7 +16,7 @@
 <br>Der Verkauf des 1. August-Abzeichens war f&uuml;r viele Jahre die Aufgabe der Trachten. 
 <br>
 <br><b>1940</b> W&auml;hrend den 40er Jahren hatten die Trachtenfrauen mit dem M&auml;nnerchor j&auml;hrlich eine Klausbescherung durchgef&uuml;hrt. Die Frauen haben gestrickt und gen&auml;ht wie Hemden, Hosen, R&ouml;cke, Handschuhe und Finken f&uuml;r die Kinder. Bis zu 200 Kleidungsst&uuml;cke fanden in den Kriegsjahren dankbare Abnehmer. 
-<br>Bei Bauersleuten wurden auch „Stubeten“ abgehalten. Auch bei Familie Weber, Hagnau, wo drei T&ouml;chter Mitglied waren, wurde gegessen, getrunken und gesungen. Bertha Fischer trug eine Schnitzelbank vor, die heute noch vorhanden ist. 
+<br>Bei Bauersleuten wurden auch &bdquo;Stubeten&rdquo; abgehalten. Auch bei Familie Weber, Hagnau, wo drei T&ouml;chter Mitglied waren, wurde gegessen, getrunken und gesungen. Bertha Fischer trug eine Schnitzelbank vor, die heute noch vorhanden ist. 
 <br> 
 <br><b>1942</b> erwarb das Mitglied Josefina Pusinelli-Fischer das Diplom zur offiziellen Trachtenschneiderin f&uuml;r das Freiamt. Dies war ein Grund, warum nun mehr Festtagstrachten getragen wurden. Martha K&auml;ppeli, Hinterdorf, fertigte die sch&ouml;nen Strohtaschen an. 
 <br> 
@@ -29,16 +29,16 @@
 <br> 
 <br><b>1955</b> wurden die Turner zugezogen, um am Heimatabend einige Volkst&auml;nze machen zu k&ouml;nnen. 
 <br>
-<br><b>1956</b> konnte die Gruppe mit den Trachtenleuten aus Wohlen das erste Mal an der Waldshuter Kilbi teilnehmen. Schon damals wurden das Essen und der Car von den Organisatoren &uuml;bernommen. Aus dem Protokoll: „So etwas liessen wir uns jedes Jahr bieten.“ 
+<br><b>1956</b> konnte die Gruppe mit den Trachtenleuten aus Wohlen das erste Mal an der Waldshuter Kilbi teilnehmen. Schon damals wurden das Essen und der Car von den Organisatoren &uuml;bernommen. Aus dem Protokoll: &bdquo;So etwas liessen wir uns jedes Jahr bieten.&rdquo; 
 <br> 
 <br><b>1963</b> f&uuml;hrte die Trachtenreise mit dem Car auf die Insel Mainau. Der Beitrag aus der Kasse f&uuml;r diese Reise wurde abgestuft, je nach Anzahl Jahre der Vereinsmit-gliedschaft. 
 <br> 
 <br><b>1964</b> &uuml;bte Tanzleiterin Margrit Schaffhauser mit der Trachtengruppe vier 
-<br>Volkst&auml;nze f&uuml;r die Expo in Lausanne ein: L&uuml;derepolka, Kreuzpolka, Misttr&auml;ppeler, Oberl&auml;nder Schottisch. Aus dem Protokoll:“ Die Leiterin war erbost &uuml;ber die vielen Absenzen, aber am Schluss hatten wir die T&auml;nze ordentlich in den Beinen!“ 
+<br>Volkst&auml;nze f&uuml;r die Expo in Lausanne ein: L&uuml;derepolka, Kreuzpolka, Misttr&auml;ppeler, Oberl&auml;nder Schottisch. Aus dem Protokoll:&rdquo; Die Leiterin war erbost &uuml;ber die vielen Absenzen, aber am Schluss hatten wir die T&auml;nze ordentlich in den Beinen!&rdquo; 
 <br>
-<br><b>1966</b> aus dem GV-Protokoll: „Die Tanzmeisterin Margrit Schaffhauser kam noch in Wallung! Wir mussten uns direkt sch&auml;men, so ungelehrige T&auml;nzerinnen gibt es nirgends¨“ Der schlechte Probenbesuch f&uuml;hrte zu dieser Aussage. Immer wieder ein Problem, weil eine Singleitung fehlte. Man war froh, wenn wieder Marie Fischer-Wetli ans Klavier sass. 
+<br><b>1966</b> aus dem GV-Protokoll: &bdquo;Die Tanzmeisterin Margrit Schaffhauser kam noch in Wallung! Wir mussten uns direkt sch&auml;men, so ungelehrige T&auml;nzerinnen gibt es nirgends¨&rdquo; Der schlechte Probenbesuch f&uuml;hrte zu dieser Aussage. Immer wieder ein Problem, weil eine Singleitung fehlte. Man war froh, wenn wieder Marie Fischer-Wetli ans Klavier sass. 
 <br> 
-<br><b>1968</b> gab die Rockl&auml;nge bei den Trachten viel zu reden. Bei einer Zusammenkunft der Frei&auml;mter Trachtengruppen mit Kantonalpr&auml;sident Dr. E. Dettwiler war dies ein grosses Thema. Aus dem Protokoll: „Es wurde gemessen und gemessen und man einigte sich auf 32 cm vom Boden f&uuml;r die Alten und 34 cm f&uuml;r die Jungen und die Festtagstracht soll noch n&auml;her beim Boden sein. Es gab dann noch ein anderes Problem, als gefragt wurde, wo die Grenze zwischen alt und jung sei?“ 
+<br><b>1968</b> gab die Rockl&auml;nge bei den Trachten viel zu reden. Bei einer Zusammenkunft der Frei&auml;mter Trachtengruppen mit Kantonalpr&auml;sident Dr. E. Dettwiler war dies ein grosses Thema. Aus dem Protokoll: &bdquo;Es wurde gemessen und gemessen und man einigte sich auf 32 cm vom Boden f&uuml;r die Alten und 34 cm f&uuml;r die Jungen und die Festtagstracht soll noch n&auml;her beim Boden sein. Es gab dann noch ein anderes Problem, als gefragt wurde, wo die Grenze zwischen alt und jung sei?&rdquo; 
 <br>
 <br><b>1969</b> durfte die Trachtengruppe mit dem Musikverein Merenschwand f&uuml;r drei Tage nach Eislingen, Deutschland. Sie alle verbrachten dort unvergessliche Tage in verschiedenen Gastfamilien. Sie machten am Umzug mit und am Deutsch-Schweizerischen Unterhaltungsabend bereicherten sie mit T&auml;nzen und Liedern das Programm. 
 <br> 
@@ -47,5 +47,5 @@
 <br><b>1980</b> feierte die Trachtengruppe Merenschwand das 50-j&auml;hrige Jubil&auml;um. Einige Dorfvereine und  Nachbars-Trachtengruppen gaben ein St&auml;ndchen. Auch die Trachten aus Altdorf, mit denen damals eine rege Freundschaft gepflegt wurde, beehrten uns mit einem Auftritt,. Ein Wehmutstropfen an diesem Abend war, dass die vielen geschenkten Blumengebinde gestohlen wurden. 
 <br>
 <br><b>1984</b> schrieb Gr&uuml;ndungsmitglied Ida Aebischer-R&auml;ber einen R&uuml;ckblick von der Trachtengruppe Merenschwand und beendigte diesen mit einem Spruch von Schoppenhauer: 
-<br>„Im Alter gibt es keinen sch&ouml;neren Trost, als man die ganze Kraft seiner Jugend die geblieben, Werken einverleibt, die nicht mitaltern.“ 
+<br>&bdquo;Im Alter gibt es keinen sch&ouml;neren Trost, als man die ganze Kraft seiner Jugend die geblieben, Werken einverleibt, die nicht mitaltern.&rdquo; 
 <br> 

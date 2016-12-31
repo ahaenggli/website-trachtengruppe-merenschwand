@@ -1,2 +1,3 @@
-User-agent: *
+User-Agent: *
 Allow: /
+Sitemap: http://www.trachtengruppe-merenschwand.ch/sitemap.xml

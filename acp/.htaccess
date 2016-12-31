@@ -5,9 +5,11 @@ require valid-user
 
 RewriteEngine on 
 RewriteRule ^([a-z-A-Z_0-9]+).html$ index.php?p=$1
-#RewriteRule ^images/(.*)$ ../images/$1
+RewriteRule ^images/(.*)$ ../images/$1
+RewriteRule ^cms_beab_([0-9]+).shtml$ index.php?p=cms_beab&cms_id=$1&cms_beab=ok
 RewriteRule ^editor_([a-z-A-Z_0-9]+).shtml$ index.php?p=editor&tpl=$1
 RewriteRule ^gal_gid_([0-9]+).shtml$ index.php?p=gal&gid=$1
 RewriteRule ^gal_jahr_([0-9]+).shtml$ index.php?p=gal&main_jahr=$1
 RewriteRule ^gal_gid_([0-9]+)_jahr_([0-9]+).shtml$ index.php?p=gal&gid=$1&main_jahr=$2
+RewriteRule ^gal_gid_([0-9]+)_jahr_diverses.shtml$ index.php?p=gal&gid=$1&main_jahr=diverses
 

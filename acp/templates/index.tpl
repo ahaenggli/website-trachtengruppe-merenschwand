@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="de">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=utf8">
 <meta http-equiv="pragma" content="cache">
 <meta http-equiv="content-language" content="de">
 <meta http-equiv="Content-Style-Type" content="text/css" >
@@ -18,7 +18,10 @@
 <meta name="revisit-after" content="2 days">
 <meta NAME="language" CONTENT="de">  
 <link href="./favicon.ico" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="../css/neu_style.css">
+
 <link rel="stylesheet" type="text/css" href="$style">
+
 <title>$title</title>
 <script type="text/javascript" language="JavaScript">
 <!--
@@ -28,6 +31,15 @@ document.Formular.inhalt.value += Smilie+" ";
 document.Formular.inhalt.focus();
 }//-->
 </script>
+
+  <script type="text/javascript" src="./nicEdit.js"></script> <script type="text/javascript">
+<script type="text/javascript" language="JavaScript">
+   bkLib.onDomLoaded(function() {
+          var myNicEditor = new nicEditor();
+          myNicEditor.setPanel('cms_message');
+          myNicEditor.addInstance('cms_message');
+     });
+  </script> 
    
 </head>
 <body>        <br>
@@ -47,5 +59,7 @@ $inhalt
 </div>
 <br style="clear:both;" ><br>
 </div>
+
+
 </body>
 </html>

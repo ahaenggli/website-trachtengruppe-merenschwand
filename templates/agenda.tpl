@@ -1,15 +1,13 @@
-<center><h1>Jahresprogramm 2015</h1>         </center>
-<center><h2>Trachtengruppe Merenschwand</h2> </center>
+<h1 class="center">Jahresprogramm 2015</h1>        
 <br>
-<br><br>
-<table border="0" cellpadding="0" align="center" cellspacing="0" style="font-size:15px;">
-  <colgroup>
-  <col width="150px">
-  <col width="300px">
 
+<table style="font-size:15px;margin:auto;">
+  <colgroup>
+  <col style="width:150px">
+  <col style="width:300px">
   </colgroup>
 
-<tr> <td><b>März</b></td>  <td></td></tr>
+<tr> <td><b>M&auml;rz</b></td>  <td></td></tr>
 <tr> <td></td>  <td>  1. 		  Kant. Singsonntag in Leutwil</td></tr>
 <tr> <td></td>  <td>21.             Combremont-le-Petit (Kt. VD), MZH</td></tr>
 <tr> <td></td>  <td>                  wir tanzen am Jodlerabend</td></tr>
@@ -39,7 +37,7 @@
 
 
 <tr> <td><b>November</b></td>  <td></td></tr>
-<tr> <td></td>  <td> 6.             Kant. Präsidentenzusammenkunft Eggenwil</td></tr>
+<tr> <td></td>  <td> 6.             Kant. Pr&auml;sidentenzusammenkunft Eggenwil</td></tr>
 <tr> <td></td>  <td>14./15.      Heimatabend mit Theater</td></tr>
 <tr> <td></td>  <td>21./22.      Heimatabend mit Theater</td></tr>
 <tr> <td></td>  <td>28.            Adventswarenverkauf</td></tr>
@@ -51,8 +49,7 @@
 
 <tr> <td><b>Januar 2016</b></td>  <td></td></tr>
 <tr> <td></td>  <td>10.            Tanzsonntag in Gipf-Oberfrick</td></tr>
-<tr> <td></td>  <td>19.            19. Januar 2016	GV 	
+<tr> <td></td>  <td>19.            Januar 2016	GV 	
 
 
 </table> 
-<br>
