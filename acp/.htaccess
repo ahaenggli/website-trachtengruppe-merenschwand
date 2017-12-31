@@ -1,0 +1,7 @@
+AuthName "GLOBAL"
+AuthType Basic
+AuthUserFile /var/www/vhosts/trachtengruppe-merenschwand.ch/httpdocs/acp/.htpasswd
+require valid-user
+
+RewriteEngine on 
+RewriteRule ^([a-z-A-Z_0-9]+).html$ index.php?p=$1

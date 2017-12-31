@@ -1,0 +1,2 @@
+RewriteEngine on 
+RewriteRule ^([a-z-A-Z_0-9]+).html$ index.php?p=$1
